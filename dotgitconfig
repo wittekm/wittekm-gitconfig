@@ -2,3 +2,8 @@
     st=status
     br=branch
     co=checkout
+    dt=difftool
+    dtu=difftool @{upstream}
+
+    # branch ordered by date, or, 'bro'
+    bro=for-each-ref --sort=committerdate refs/heads/ --format='%(committerdate:short) %(refname:short)'
