@@ -1,9 +1,12 @@
 [alias]
-    st=status
+    st=fast-status
     br=branch
-    co=checkout
+    co=fast-checkout
+    cm=fast-commit
     dt=difftool
     dtu=difftool @{upstream}
+    cane=commit --amend --no-edit
 
     # branch ordered by date, or, 'bro'
     bro=for-each-ref --sort=committerdate refs/heads/ --format='%(committerdate:short) %(refname:short)'
+    cou=checkout @{upstream} -- 
